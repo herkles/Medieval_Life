@@ -1,0 +1,8 @@
+﻿l_english:
+#######################################
+# General Pregnancy Events
+#######################################
+  # Pregnancy Glowing
+ ml_pregnancy.001.t:0 "Pregnancy!"
+ ml_pregnancy.001.desc:0 "Smoother skin, shining eyes, fuller curves... The changes brought by this pregnancy have made me even more beautiful than I already was."
+ ml_pregnancy.001.a:0 "It's well worth the nausea!"
