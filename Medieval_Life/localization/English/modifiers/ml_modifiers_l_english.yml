@@ -1,0 +1,6 @@
+﻿l_english:
+#######################################
+# Pregnancy modifiers
+#######################################
+ ml_mother_pregnancy_glow_modifier:0 "Pregnancy Glow"
+ ml_mother_pregnancy_glow_modifier_desc:1 "Courtiers are saying this woman is glowing due to her pregnancy."

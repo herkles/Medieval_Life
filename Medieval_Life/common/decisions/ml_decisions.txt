@@ -1,0 +1,46 @@
+﻿#############################################
+# Pregnancy Decisions
+#############################################
+ml_pregnancy_mary_vow_decision = {
+	picture = "gfx/interface/illustrations/decisions/ml_mary_vow_decision.dds"
+
+	desc = ml_pregnancy_mary_vow_decision_desc
+	selection_tooltip = ml_pregnancy_mary_vow_decision_tooltip
+
+	is_shown = { religion = religion:christianity_religion }
+
+	is_valid = {
+		religion = religion:christianity_religion
+		custom_description = {
+			text = ml_pregnancy_took_mary_vow
+			NOT = { has_character_flag = flag_ml_pregnancy_took_mary_vow }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+	}
+
+	effect = {
+		custom_tooltip = ml_pregnancy_mary_vow_decision_effect.tt
+		trigger_event = religious_decision.0001
+		add_character_flag = {
+			flag = flag_ml_pregnancy_took_mary_vow
+			days = 1825
+			}
+	}
+
+	ai_check_interval = 60
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+		ai_value_modifier = { ai_zeal = 1 }		
+	}
+}
+
+
+
+

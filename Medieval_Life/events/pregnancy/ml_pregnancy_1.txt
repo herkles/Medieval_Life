@@ -2,12 +2,1071 @@
 
 
 
+
 ##############################################
-# Pregnancy Glow
+# Pregnancy complications
 ##############################################
-ml_pregnancy.001 = {# Pregnancy Glow
+ml_pregnancy.004 = {# Vomiting
 	type = character_event
-	content_source = medieval_life
+	title = ml_pregnancy.004.t
+	desc = ml_pregnancy.004.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
+
+	
+	option = {# This sucks
+		name = ml_pregnancy.004.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.005 = {# Hair and Rashes
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.006 = {# Metalmouth
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.007 = {# Fever and Sweat
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.008 = {# Amnesia
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.009 = {# Panic Attack
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+##############################################
+# Pregnancy complications(dangerous)
+##############################################
+ml_pregnancy.010 = {# undernourishment
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.011 = {# Epilectic Episode
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.012 = {# Blood and Cramps
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.013 = {# Teeth Hurting and Falling
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.014 = {# Insomnia
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.015 = {# Hallucinations
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.016 = {# Sleep-Walking
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.017 = {# Pregnancy Recovery
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.018 = {# Physician notified of mother recovering from troubled pregnancy before childbirth
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.019 = {# Spouse is notified of mother recovering from troubled pregnancy before childbirth
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+##############################################
+# Post birth issues
+##############################################
+ml_pregnancy.020 = {# Post Fever
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.021 = {# Hair Loss
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.022 = {# Blood
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+#######################################
+# Recovery After Birth
+#######################################
+ml_pregnancy.023 = {# Complete Recovery
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.024 = {# Partial Recovery
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.025 = {# remains infirm
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.026 = {# Spouse notified of full recovery
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.027 = {# Spouse notified of partial recovery
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.028 = {# Spouse notified of infirmity
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
+	
+	cooldown = { days = 1825 }
+	
+	trigger = {
+
+	}
+	
+	immediate = {
+
+	}
+	
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
+			
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
+	
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+##############################################
+# Pregnancy Joy
+##############################################
+ml_pregnancy.029 = {# Pregnancy Joys(Hidden)
+	type = character_event
 	title = ml_pregnancy.001.t
 	desc = ml_pregnancy.001.desc
 	theme = stewardship
@@ -28,8 +1087,15 @@ ml_pregnancy.001 = {# Pregnancy Glow
 	
 	option = {# 
 		name = ml_pregnancy.001.a
-		
-
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
 		ai_chance = {
 			base = 10
 			
@@ -45,1594 +1111,705 @@ ml_pregnancy.001 = {# Pregnancy Glow
 	}
 	
 }
-# ml_pregnancy.002 = {# Pregnancy Glow - Spouse notified
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+ml_pregnancy.030 = {# Pregnancy Glow
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.003 = {# Pregnancy Glow - Spouse is flattering you
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.031 = {# Pregnancy Glow(Spouse)
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Pregnancy complications
-# ##############################################
-# ml_pregnancy.004 = {# Vomiting
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.032 = {# First pregnancy scare
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.005 = {# Hair and Rashes
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.033 = {# Baby kicks
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.006 = {# Metalmouth
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.034 = {# Mother needs new dresses
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.007 = {# Fever and Sweat
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.035 = {# pregnant wife wants new dresses
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.008 = {# Amnesia
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.036 = {# Wife flattered by husband
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.009 = {# Panic Attack
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.037 = {# Wife gets clothes from husband
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Pregnancy complications(dangerous)
-# ##############################################
-# ml_pregnancy.010 = {# undernourishment
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+}
+ml_pregnancy.038 = {# Wife doesn't get clothes from husband
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = courtyard
+	}
+	left_portrait = {
+		character = root
+		animation = pregnant
+	}
 
-# 	}
+	trigger = {
+		is_ruler = yes
+		is_landed = yes
+		is_pregnant = yes
+		has_trait = pregnant
+	}
 	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = {# 
+		name = ml_pregnancy.001.a
+		add_character_modifier = {
+			modifier = ml_mother_pregnancy_glow_modifier
+			days = 80
+		}		
+		stress_impact = {
+			depressed_1 = miniscule_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			base = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.011 = {# Epilectic Episode
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
+}
+##############################################
+# Make vow to the Virigin Mary
+##############################################
+ml_pregnancy.040 = {# Make a vow to the Virign Mary
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
 	
-# 	cooldown = { days = 1825 }
+	cooldown = { days = 1825 }
 	
-# 	trigger = {
+	trigger = {
 
-# 	}
+	}
 	
-# 	immediate = {
+	immediate = {
 
-# 	}
+	}
 	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.012 = {# Blood and Cramps
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.041 = {# What sort of Vow do you make?
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
 	
-# 	cooldown = { days = 1825 }
+	cooldown = { days = 1825 }
 	
-# 	trigger = {
+	trigger = {
 
-# 	}
+	}
 	
-# 	immediate = {
+	immediate = {
 
-# 	}
+	}
 	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.013 = {# Teeth Hurting and Falling
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.042 = {# Keeping vow after baby is born
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
 	
-# 	cooldown = { days = 1825 }
+	cooldown = { days = 1825 }
 	
-# 	trigger = {
+	trigger = {
 
-# 	}
+	}
 	
-# 	immediate = {
+	immediate = {
 
-# 	}
+	}
 	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.014 = {# Insomnia
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.043 = {# Breaking the Vow and bad stuff happens
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
 	
-# 	cooldown = { days = 1825 }
+	cooldown = { days = 1825 }
 	
-# 	trigger = {
+	trigger = {
 
-# 	}
+	}
 	
-# 	immediate = {
+	immediate = {
 
-# 	}
+	}
 	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.015 = {# Hallucinations
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+##############################################
+# Offering to the Gods
+##############################################
+ml_pregnancy.045 = {# Preparation for offering
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
 	
-# 	cooldown = { days = 1825 }
+	cooldown = { days = 1825 }
 	
-# 	trigger = {
+	trigger = {
 
-# 	}
+	}
 	
-# 	immediate = {
+	immediate = {
 
-# 	}
+	}
 	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.016 = {# Sleep-Walking
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+ml_pregnancy.045 = {# What are you wishing for?
+	type = character_event
+	title = ml_pregnancy.001.t
+	desc = ml_pregnancy.001.desc
+	theme = stewardship
+	override_background = {
+		reference = garden
+	}
+	left_portrait = scope:gardener
 	
-# 	cooldown = { days = 1825 }
+	cooldown = { days = 1825 }
 	
-# 	trigger = {
+	trigger = {
 
-# 	}
+	}
 	
-# 	immediate = {
+	immediate = {
 
-# 	}
+	}
 	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
+	option = { # Allow me to help!
+		name = ml_pregnancy.001.a	
+		ai_chance = {
+			base = 10
 			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
+			modifier = {
+				add = 30
+				num_of_relation_friend < 2
+			}
+			modifier = {
+				factor = 0.5
+				has_trait = shy
+			}
+		}
+	}
 	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Pregnancy Joy
-# ##############################################
-# ml_pregnancy.017 = {# Baby Kicks
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+	after = {
+		scope:gardener = {
+			remove_variable = animal_type
+		}
+	}
+}
+##############################################
+# Getting an omen
+##############################################
 
-# 	}
-	
-# 	immediate = {
+##############################################
+# Getting an omen
+##############################################
 
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.018 = {# Offer solace to spouse
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+##############################################
+# Getting an omen
+##############################################
 
-# 	}
-	
-# 	immediate = {
+##############################################
+# Getting an omen
+##############################################
 
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.019 = {# spouse comforts you
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
+##############################################
+# The Gossiping
+##############################################
 
-# 	}
-	
-# 	immediate = {
+##############################################
+# Pagan Fertility Festival
+##############################################
 
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.020 = {# Give presents to wife?
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.021 = {# Got presents
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Make vow to the Virigin Mary
-# ##############################################
-# ml_pregnancy.022 = {# Make a vow to the Virign Mary
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.023 = {# What sort of Vow do you make?
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.024 = {# Keeping vow after baby is born
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Mood Swings
-# ##############################################
-# ml_pregnancy.025 = {# Angry and wrothful
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.026 = {# Spouse's reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.027 = {# Wrothful Wife reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Mood Swings
-# ##############################################
-# ml_pregnancy.028 = {# Sad and Depressed
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.029 = {# Spouse's reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.030 = {# Sad Wife reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Mood Swings
-# ##############################################
-# ml_pregnancy.031 = {# Eating and Gluttony
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.032 = {# Spouse's reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.033 = {# Gluttonous Wife reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Mood Swings
-# ##############################################
-# ml_pregnancy.034 = {# Drinking and Drunkard
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.035 = {# Spouse's reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.036 = {# Drinking Wife reaction
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Lover(not spouse)
-# ##############################################
-# ml_pregnancy.037 = {# Visit pregnant lover in secret?
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ml_pregnancy.038 = {# Lover comes to visit you
-# 	type = character_event
-# 	title = ml_pregnancy.001.t
-# 	desc = ml_pregnancy.001.desc
-# 	theme = stewardship
-# 	override_background = {
-# 		reference = garden
-# 	}
-# 	left_portrait = scope:gardener
-	
-# 	cooldown = { days = 1825 }
-	
-# 	trigger = {
-
-# 	}
-	
-# 	immediate = {
-
-# 	}
-	
-# 	option = { # Allow me to help!
-# 		name = ml_pregnancy.001.a	
-# 		ai_chance = {
-# 			base = 10
-			
-# 			modifier = {
-# 				add = 30
-# 				num_of_relation_friend < 2
-# 			}
-# 			modifier = {
-# 				factor = 0.5
-# 				has_trait = shy
-# 			}
-# 		}
-# 	}
-	
-# 	after = {
-# 		scope:gardener = {
-# 			remove_variable = animal_type
-# 		}
-# 	}
-# }
-# ##############################################
-# # Pagan Fertility Festival
-# ##############################################
-
-# ##############################################
-# # Pumsavana Rite for Hindus
-# ##############################################
+##############################################
+# Pumsavana Rite for Hindus
+##############################################
 
 
 

@@ -1,0 +1,28 @@
+﻿##################################################
+# General modifers
+##################################################
+ml_mother_pregnancy_glow_modifier = {# Pregnancy Glowing
+	icon = family_positive
+	spouse_opinion = 5
+	attraction_opinion = 5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

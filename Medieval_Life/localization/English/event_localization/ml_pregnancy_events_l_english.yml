@@ -1,8 +1,244 @@
 ﻿l_english:
 #######################################
-# General Pregnancy Events
+# General Pregnancy Troubles 
 #######################################
-  # Pregnancy Glowing
- ml_pregnancy.001.t:0 "Pregnancy!"
- ml_pregnancy.001.desc:0 "Smoother skin, shining eyes, fuller curves... The changes brought by this pregnancy have made me even more beautiful than I already was."
- ml_pregnancy.001.a:0 "It's well worth the nausea!"
+ ml_pregnancy.004.t:0 "Vomiting"
+ ml_pregnancy.004.desc:0 "The servants take away the last bucket filled with my vomit, but they are not fast enough to place the new one under my face. As I puke all over my bed, the stench provokes a new surge of nausea, making me shiver violently."
+ ml_pregnancy.004.a:0 "Ugh... When will it end?"
+
+ ml_pregnancy.005.t:0 "Hair and Rashes"
+ ml_pregnancy.005.desc:0 "I tear off another bush of hair from my chest, trying to stop myself from scratching my arms and legs some more. Despite my best efforts to stop it, since a few days now dozens of rashes and spots of disgusting fur have started to dot my skin."
+ ml_pregnancy.005.a:0 "This is horrible!"
+
+ ml_pregnancy.006.t:0 "Food tasting like metal"
+ ml_pregnancy.006.desc:0 "I spit out the glass of water, and order one of my servants to try it again. As the pregnancy progressed, everything has started to taste progressively worse, to the point that now even the blandest of foods and beverages feel like rusted copper in my mouth."
+ ml_pregnancy.006.a:0 "Utterly repulsive."
+
+ ml_pregnancy.007.t:0 "Fever and Sweat"
+ ml_pregnancy.007.desc:0 "I feel the touch of the servants covering me yet another time as I stir under my bedsheets, sweating and shivering. I have long since lost the sense of time since this fever has started tormenting me. In fact, I can barely tell if I am awake or not most of the times."
+ ml_pregnancy.007.a:0 "Where...?"
+
+ ml_pregnancy.008.t:0 "Forgetting Things"
+ ml_pregnancy.008.desc:0 "As I spend more days wasting away in my bedroom, tormented by this pregnancy, I am finding it a lot harder to focus on anything. Things that I thought obvious now slip away from my mind, and I can hardly remember the names of half the people I seen moving back and forth from my rooms."
+ ml_pregnancy.008.a:0 "Who are you again?"
+
+ ml_pregnancy.009.t:0 "Panic Attack!"
+ ml_pregnancy.009.desc:0 "Once again, I wake in the dead of night, covered in cold sweat, with my heart beating wildly and struggling to breathe. My throat is already sore, but I still manage to scream my lungs out for help. When the guards finally come in, it takes them some time to stop me from screaming entirely and to assure me that there is nothing I should be worrying about."
+ ml_pregnancy.009.a:0 "But I saw something! I saw..?"
+
+#######################################
+# more serious Pregnancy Troubles 
+#######################################
+ ml_pregnancy.010.t:0 "Food has lost taste..."
+ ml_pregnancy.010.desc:0 "One of my servants hangs a dish filled with yet another delicacy below my nose, but I quickly push it aside in disgust. I have barely the strength left to breathe, let alone to chew anything, and the growing cramps from your womb are making me feel nauseous at every turn, so much so that has become really hard for me to eat anything at all."
+ ml_pregnancy.010.a:0 "I just wish to rest..."
+
+ ml_pregnancy.011.t:0 "Demonic Attack!"
+ ml_pregnancy.011.desc:0 "I stir and drool, twisting uncontrollably in my bed, despite my servants' best efforts to hold me still. I hear voices, both worried and threatening, echo around me, but everything is blurry and I have no idea what is happening to me, nor why I am unable to stop screaming and foaming at the mouth."
+ ml_pregnancy.011.a:0 "Why am I afflicted so.."
+
+ ml_pregnancy.012.t:0 "Blood and Cramps"
+ ml_pregnancy.012.desc:0 "The servants come once more to change the bedsheets soaked in my blood as I scream and fruitlessly grasp for something to hold onto as I try to ease the pain that coursing through every fiber of my body."
+ ml_pregnancy.012.a:0 "Let it stop! Please!"
+
+ ml_pregnancy.013.t:0 "Teeth falling out!"
+ ml_pregnancy.013.desc:0 "I let out a whimper when the tooth rolls over my bedsheets, and then moan through my closed mouth as I feel the metallic taste of blood fill my throat and more teeth loosen from my weakened gums."
+ ml_pregnancy.013.a:0 "Gllkh!"
+
+ ml_pregnancy.014.t:0 "Unable to sleep"
+ ml_pregnancy.014.desc:0 "Yet another servant girls falls asleep in the middle of her story as I keep staring at her, teeming with envy. It has been almost a week since I last managed to sleep properly. My eyes are bloodshot and my ears scream in pain at even the softest whisper."
+ ml_pregnancy.014.a:0 "I just want to rest! Even just an hour!"
+
+ ml_pregnancy.015.t:0 "Seeing things"
+ ml_pregnancy.015.desc:0 "Some of the servants seem to have been really started to worry about me since a few weeks, but in truth, I have not felt this good since quite some time, especially after since the talking fox brought some of his friends in my bedchamber to entertain me with their delightful escapades."
+ ml_pregnancy.015.a:0 "Oh, Lord Butterfly, you are such a braggart!"
+
+ ml_pregnancy.016.t:0 "Sleep Walking"
+ ml_pregnancy.016.desc:0 "I startle as a pair of hands drags me back from the edge of the balcony. How did I even get here? The last thing I recall was trying to find the right position to sleep without squashing my womb..."
+ ml_pregnancy.016.a:0 "Who..? Who are you? Where am I?"
+
+ ml_pregnancy.017.t:0 "Things looking better"
+ ml_pregnancy.017.desc:0 "Things seem to be finally improving. I have resumed to sleep and eat regularly and the cramps have subsided. I may be able to see this labor to its end after all..."
+ ml_pregnancy.017.a:0 "Hopefully the worst has passed."
+
+ ml_pregnancy.018.t:0 "[pregnant_lady.GetFirstName] has recovered"
+ ml_pregnancy.018.desc:0 "My treatment is finally showing some results my [pregnant_lady.GetFromRelation] [pregnant_lady.GetFirstName] is sleeping and eating regularly again, and her cramps have subsidized. The pregnancy is not over yet, but she might be able to make it after all."
+ ml_pregnancy.018.a:0 "Wonderful!"
+
+ ml_pregnancy.019.t:0 "[pregnant_lady.GetFirstName] has recovered"
+ ml_pregnancy.019.desc:0 "My wife [pregnant_lady.GetFirstName] is sleeping and eating regularly again, and she claims to be feeling better. The pregnancy is not over yet, but she might be able to make it after all."
+ ml_pregnancy.019.a:0 "Wonderful!"
+#######################################
+# Post birth issues
+#######################################
+ ml_pregnancy.020.t:0 "Post Fever"
+ ml_pregnancy.020.desc:0 "The pregnancy is over, but I have yet to leave my chambers, scourged by a steaming fever which is leaving me shivering and burning under my bedsheets.;"
+ ml_pregnancy.020.a:0 "When will it end?"
+
+ ml_pregnancy.021.t:0 "Hair loss"
+ ml_pregnancy.021.desc:0 "As I turn restlessly in my bed, I find another curl of hair laying severed amongst the sheets. There is no doubt anymore that the strain my pregnancy put me under is resulting in an alarming loss of hair."
+ ml_pregnancy.021.a:0 "What is happening to me?!"
+
+ ml_pregnancy.022.t:0 "Blood"
+ ml_pregnancy.022.desc:0 "My bleeding has yet to stop. Even with the child out, I am still experiencing frequent accesses, despite the best efforts of my healers to stop the flow of blood."
+ ml_pregnancy.022.a:0 "No! Not like this!!"
+
+#######################################
+# Recovery After Birth
+#######################################
+ ml_pregnancy.023.t:0 "Full Recovery"
+ ml_pregnancy.023.desc:0 "The horrific trial is finally over. I have fully recovered from the ordeal that was this pregnancy without any lasting scar."
+ ml_pregnancy.023.a:0 "I am a little bit tired still..."
+
+ ml_pregnancy.024.t:0 "Partial Recovery"
+ ml_pregnancy.024.desc:0 "I am finally starting to recover from the ordeal of this labor, but there is no doubt that this experience has considerably weakened me."
+ ml_pregnancy.024.a:0 "I might not survive another labor."
+
+ ml_pregnancy.025.t:0 "remains infirm"
+ ml_pregnancy.025.desc:0 "Although my body is recovering from the pregnancy, the pain I endured has deeply scarred my mind. Every little sound puts me on alert and it is harder and harder to find the resolve to go outside of my room, even to perform the simplest task."
+ ml_pregnancy.025.a:0 "I am so tired and- what was it again?"
+
+ ml_pregnancy.026.t:0 "Wife has fully recovered"
+ ml_pregnancy.026.desc:0 "My wife [From.GetFirstName] went through an extremely painful and dangerous labor, but she seems to have miraculously recovered from it without any permanent damage."
+ ml_pregnancy.026.a:0 "This is wonderful news!"
+
+ ml_pregnancy.027.t:0 "Wife has partial recovered"
+ ml_pregnancy.027.desc:0 "My wife [From.GetFirstName] went through an extremely painful and dangerous labor and, while she managed to survive it, she has been left weakened and fragile after the ordeal."
+ ml_pregnancy.027.a:0 "Is the womb still in working condition though?"
+
+ ml_pregnancy.028.t:0 "Wife hasn't recovered"
+ ml_pregnancy.028.desc:0 "My wife [From.GetFirstName] went through an extremely painful and dangerous labor and, while her body managed to survive largely unscathed, her mind was unfortunately shattered by the hellish experience."
+ ml_pregnancy.028.a:0 "t least the body is fine."
+#######################################
+# Pregnancy Joy
+#######################################
+ ml_pregnancy.030.t:0 "Pregnancy Glow"
+ ml_pregnancy.030.desc:0 "Smoother skin, shining eyes, fuller curves... The changes brought by this pregnancy have made me more beautiful than I ever was in my entire life."
+ ml_pregnancy.030.a:0 "It's well worth the nausea!"
+
+ ml_pregnancy.031.t:0 "Pregnancy"
+ ml_pregnancy.031.desc:0 "I could scarcely believe it, but the pregnancy has made my [GetFromRelation] [From.GetFirstName] look more beautiful than she ever was. Whenever we are in the same room I can hardly take my eyes off her..."
+ ml_pregnancy.031.a:0 "Better make a move quickly!"
+ ml_pregnancy.031.b:0 "She is with child. I should not look at her this way."
+
+ ml_pregnancy.032.t:0 "Pregnancy Worries"
+ ml_pregnancy.032.desc:0 "This is going to be my first child, and I feel completely lost. What if I am doing something wrong? What if something bad happens? What should I do while I wait for the day of my labor?"
+ ml_pregnancy.032.a:0 "I need to pray for my child's good health."
+ ml_pregnancy.032.b:0 "I need to rest and avoid any hard task."
+ ml_pregnancy.032.c:0 "I need to find something to distract myself from this burden."
+
+ ml_pregnancy.033.t:0 "Baby Kicks for the first time"
+ ml_pregnancy.033.desc:0 "Ouch! As I place a hand over my belly and slowly sit down, a soft smile makes its way across my face. The baby is kicking for the first time. I felt my child move for the first time. A happy feeling comes across me."
+ ml_pregnancy.033.a:0 "This is wonderful"
+
+ ml_pregnancy.034.t:0 "Needing new Dresses"
+ ml_pregnancy.034.desc:0 "What a bother! The number of good dresses that I am still able to wear is growing increasingly smaller as my pregnancy takes its course. Perhaps I should order new clothes to be tailored on my current measurements..."
+ ml_pregnancy.034.a:0 "Maybe if I ate less I could still wear some of my old dresses..."
+ ml_pregnancy.034.b:0 "I will have to ask my spouse to buy me new clothes."
+ ml_pregnancy.034.c:0 "I really need to order new clothes."
+ ml_pregnancy.034.d:0 "No need to go through all this trouble for some dress."
+
+ ml_pregnancy.035.t:0 "Wife wants new clothes"
+ ml_pregnancy.035.desc:0 "My wife [spouse.GetFirstName] asked me to buy her some new clothes. Because of the pregnancy, she has outgrown most of her wardrobe and now she feels frustrated for not having anything nice to wear whenever she needs to make an appearance at court."
+ ml_pregnancy.035.a:0 "My dear, you do not need new clothes. You are already wonderful"
+ ml_pregnancy.035.a:0 "Very well, summon the tailor."
+ ml_pregnancy.035.a:0 "Why? So that she can throw them away a few months from now?"
+
+ ml_pregnancy.036.t:0 "Spouse Flatters you"
+ ml_pregnancy.036.desc:0 "[spouse.GetFirstName] convinced me that I do not need any new fancy clothes when I am already positively glowing."
+ ml_pregnancy.036.a:0 "Oh you!"
+
+ ml_pregnancy.037.t:0 "Spouse bought you new clothes"
+ ml_pregnancy.037.desc:0 "[From.GetFirstName] was happy to buy me new clothes. Being able to wear something that is both nice and comfortable has certainly improved my disposition."
+ ml_pregnancy.037.a:0 "I feel much better now."
+
+ ml_pregnancy.038.t:0 "Spouse won't buy you clothes"
+ ml_pregnancy.038.desc:0 "Unbelievable! [From.GetFirstName] refused to buy me new clothes! Am I not already under enough stress as it is"
+ ml_pregnancy.038.a:0 "He never thinks about how I feel."
+##############################################
+# Make vow to the Virigin Mary
+##############################################
+ ml_pregnancy.040.t:0 "Shall I make a vow"
+ ml_pregnancy.040.desc:0 "I am uncertain about my future and I cannot stop worrying about the life of my unborn child. Perhaps I should make a vow to the Holy Virgin Mary, and pray her to ease my tribulations and help me give birth to a strong and healthy child."
+ ml_pregnancy.040.a:0 "Go and Make the Vow"
+ ml_pregnancy.040.b:0 "I do not need to concern the Holy Virgin with my troubles."
+
+ ml_pregnancy.041.t:0 "Making a vow to the Holy Virgin"
+ ml_pregnancy.041.desc:0 "The statue of the Holy Virgin stands over the chapel's alcove, the divine child resting on her arm. I kneel before it and look up at her somber smile and say a prayer as I make my vow."
+ ml_pregnancy.041.a:0 "I vow to be chaste and virtuous."
+ ml_pregnancy.041.b:0 "I vow to be humble and set aside all frivolous things."
+ ml_pregnancy.041.c:0 "I vow to be charitable and take care of the needy."
+ ml_pregnancy.041.d:0 "I vow to be temperate and avoid all excesses."
+
+ ml_pregnancy.042.t:0 "Remembering my Vow"
+ ml_pregnancy.042.desc:0 "The vow was not in vain. I have been blessed with a beautiful [baby.getGirlBoy]. My baby is alive and with me. As my [baby.GetGirlBoy] is feeding from my breast, I remember my vow. I remember what I promised the Holy Mother"
+ ml_pregnancy.042.a:0 "I must still keep true to my vow."
+ ml_pregnancy.042.b:0 "I think it is time to turn my mind back to mundane concerns."
+
+ ml_pregnancy.042.t:0 "Breaking my vow"
+ ml_pregnancy.042.desc:0 "I decided to turn my back on the vow I made to the Holy Mother of God. and I have angered her and I have angered God through my sinning and sinful ways. For God has afflicted my child with an illness. I must make amends to the Holy Mother and God Almighty.."
+ ml_pregnancy.042.a:0 "What have I done?"
+
+
+#######################################
+# Offering to the Gods
+#######################################
+ ml_pregnancy.045.t:0 "Offerings for my child"
+ ml_pregnancy.045.desc:0 "I cannot stop worrying about my unborn child. Shall I finish making my preparations to ask the [root.GetPantheonTerm] for blessings for my child? or is the time not right?"
+ ml_pregnancy.045.a:0 "I will make an offering to the [root.GetPantheonTerm]."
+ ml_pregnancy.045.b:0 "It would be too dangerous to go out alone in my condition."
+
+ ml_pregnancy.046.t:0 "Making my offerings"
+ ml_pregnancy.046.desc:0 "As the smoke of my offering rises to the sky, I can almost hear the faint whispers of the [root.GetPantheonTerm] traveling through the wind. I have called the attention of the immortals, it is now time to make my request."
+ ml_pregnancy.046.b:0 "Grant me a strong and healthy child!"
+ ml_pregnancy.046.b:0 "I only hope to have a beautiful and healthy child!"
+ ml_pregnancy.046.b:0 "WhfI wish for my child to be bright and healthy!"
+
+#######################################
+# Make vow to the Virigin Mary
+#######################################
+
+##############################################
+# Pagan Fertility Festival
+##############################################
+
+##############################################
+# Pumsavana Rite for Hindus
+##############################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

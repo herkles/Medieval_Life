@@ -1,0 +1,8 @@
+﻿l_english:
+#######################################
+# Pregnancy Decisions 
+#######################################
+  ml_pregnancy_mary_vow_decision:0 "Make a vow to the Virgin  Mary"
+  ml_pregnancy_mary_vow_decision_desc:0 "The holy blessed virgin Mary was pregnant with our saviour, with Jesus, in her womb. As such it is common for women who are with child to make a vow to the Mother of God in order to maybe be blessed during this troubling time. "
+  ml_pregnancy_mary_vow_decision_confirm:0 "Make a vow"
+  ml_pregnancy_mary_vow_decision_tooltip:0 "You shall make a vow to Mary"
