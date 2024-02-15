@@ -1,0 +1,19 @@
+﻿l_english:
+#######################################
+# Fertility Festival Intents
+#######################################
+  ml_pregnancy_pagan_festival_beauty_intent_header: "Beauty:"
+  ml_pregnancy_pagan_festival_beauty_intent: "Beauty"
+  ml_pregnancy_pagan_festival_beauty_intent_desc: "You will beseech the [Root.GetPantheonTerm] for the child to have beauty."
+
+  ml_pregnancy_pagan_festival_health_intent_header: "Health:"
+  ml_pregnancy_pagan_festival_health_intent: "Health"
+  ml_pregnancy_pagan_festival_health_intent_desc: "You will beseech the [Root.GetPantheonTerm] for the child to have Health."
+
+  ml_pregnancy_pagan_festival_prowess_intent_header: "Prowess:"
+  ml_pregnancy_pagan_festival_prowess_intent: "Prowess"
+  ml_pregnancy_pagan_festival_prowess_intent_desc: "You will beseech the [Root.GetPantheonTerm] for the child to have Strength."
+
+  ml_pregnancy_pagan_festival_devotional_intent_header: "Piety:"
+  ml_pregnancy_pagan_festival_devotional_intent: "Piety"
+  ml_pregnancy_pagan_festival_devotional_intent_desc: "You will beseech the [Root.GetPantheonTerm] for the child to have devotion to the [Root.getPantheonTerm]."

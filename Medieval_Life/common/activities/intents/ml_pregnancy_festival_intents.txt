@@ -1,0 +1,84 @@
+ml_pregnancy_pagan_festival_beauty_intent = {
+	icon = romance_intent
+
+	auto_complete = yes
+
+	is_shown = {
+		
+	}
+
+	on_invalidated = {
+		trigger_event = activity_system.0090
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+
+	scripted_animation = {
+		animation = personality_rational
+	}
+}
+ml_pregnancy_pagan_festival_health_intent = {
+	icon = worldly_intent
+
+	auto_complete = yes
+
+	is_shown = {
+		
+	}
+
+	on_invalidated = {
+		trigger_event = activity_system.0090
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+
+	scripted_animation = {
+		animation = personality_zealous
+	}
+}
+ml_pregnancy_pagan_festival_prowess_intent = {
+	icon = recruit_knights_intent
+
+	auto_complete = yes
+
+	is_shown = {
+		
+	}
+
+	on_invalidated = {
+		trigger_event = activity_system.0090
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+
+	scripted_animation = {
+		animation = personality_bold
+	}
+}
+ml_pregnancy_pagan_festival_devotional_intent = {
+	icon = pious_intent
+
+	auto_complete = yes
+
+	is_shown = {
+		
+	}
+
+	on_invalidated = {
+		trigger_event = activity_system.0090
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+
+	scripted_animation = {
+		animation = war_over_win
+	}
+}

@@ -68,6 +68,7 @@
  ml_pregnancy.019.t:0 "[pregnant_lady.GetFirstName] has recovered"
  ml_pregnancy.019.desc:0 "My wife [pregnant_lady.GetFirstName] is sleeping and eating regularly again, and she claims to be feeling better. The pregnancy is not over yet, but she might be able to make it after all."
  ml_pregnancy.019.a:0 "Wonderful!"
+
 #######################################
 # Post birth issues
 #######################################
@@ -82,7 +83,6 @@
  ml_pregnancy.022.t:0 "Blood"
  ml_pregnancy.022.desc:0 "My bleeding has yet to stop. Even with the child out, I am still experiencing frequent accesses, despite the best efforts of my healers to stop the flow of blood."
  ml_pregnancy.022.a:0 "No! Not like this!!"
-
 #######################################
 # Recovery After Birth
 #######################################
@@ -109,6 +109,7 @@
  ml_pregnancy.028.t:0 "Wife hasn't recovered"
  ml_pregnancy.028.desc:0 "My wife [From.GetFirstName] went through an extremely painful and dangerous labor and, while her body managed to survive largely unscathed, her mind was unfortunately shattered by the hellish experience."
  ml_pregnancy.028.a:0 "t least the body is fine."
+
 #######################################
 # Pregnancy Joy
 #######################################
@@ -155,6 +156,7 @@
  ml_pregnancy.038.t:0 "Spouse won't buy you clothes"
  ml_pregnancy.038.desc:0 "Unbelievable! [From.GetFirstName] refused to buy me new clothes! Am I not already under enough stress as it is"
  ml_pregnancy.038.a:0 "He never thinks about how I feel."
+
 ##############################################
 # Make vow to the Virigin Mary
 ##############################################
@@ -179,7 +181,6 @@
  ml_pregnancy.042.desc:0 "I decided to turn my back on the vow I made to the Holy Mother of God. and I have angered her and I have angered God through my sinning and sinful ways. For God has afflicted my child with an illness. I must make amends to the Holy Mother and God Almighty.."
  ml_pregnancy.042.a:0 "What have I done?"
 
-
 #######################################
 # Offering to the Gods
 #######################################
@@ -195,7 +196,90 @@
  ml_pregnancy.046.b:0 "WhfI wish for my child to be bright and healthy!"
 
 #######################################
-# Make vow to the Virigin Mary
+# Familial Solace and Joys
+#######################################
+ ml_pregnancy.050.t:0 "see pregnant lover?"
+ ml_pregnancy.050.desc.male_lover:0 "I can only imagine how [lover.GetFirstName] must feel as if being unable to publicly declare our feelings for each other was not enough, she now must lie about the fruit of our love. However, I do have a chance to visit her and give her my solace."
+ ml_pregnancy.051.desc.female_lover:0 "I can only imagine how [lover.GetFirstName] must feel as if being unable to publicly declare our feelings for each other was not enough, she now has to carry a child against her will. However, I do have a chance to visit her and give her my solace. "
+ ml_pregnancy.050.a:0 "I must vist her"
+ ml_pregnancy.050.b:0 "It would be too dangerous right now."
+
+ ml_pregnancy.051.t:0 "Lover comes to visit"
+ ml_pregnancy.051.desc:0 "When I discovered [lover.GetFirstName] lurking in my chambers I barely managed to restrain myself from screaming and accidentally called the guards on [lover.GetHerHim]. My lover told me that [lover.GetSheHe] wished to comfort me in this stressful period of my life."
+ ml_pregnancy.051.a:0 "I am so glad you came!"
+
+ ml_pregnancy.052.t:0 "Loving husband spends time with you"
+ ml_pregnancy.052.desc:0 "My loving husband [Spouse.getName] has come to visit me and provide me solace during these times. He was so attentive to my needs and calmed me even though I cried for some reason. "
+ ml_pregnancy.052.a:0 "I am so lucky to have someone like you"
+
+ ml_pregnancy.053.t:0 "Familial comfort and solace"
+ ml_pregnancy.053.desc:0 "I have been spending some time around my family more as I am in the midst of this ordeal carrying my baby. Their comfort and care for me during this time has been a blessing that has made this more bearable to endure. "
+ ml_pregnancy.053.a:0 "I am glad you came."
+
+ ml_pregnancy.054.t:0 "Amorous moments with my spouse"
+ ml_pregnancy.054.desc:0 "Lately I have been feeling rather amorous and in a loving mood with my husband. My wonderful husband was at first a bit surprised but to my joy he came to the bedchambers ready. I hope the noises didn't disturb the others in the keep."
+ ml_pregnancy.054.a:0 "Now this is wonderful."
+
+ ml_pregnancy.055.t:0 "relative gives advice"
+ ml_pregnancy.055.desc:0 "Today I was visited by my [relative.GetRelation] [relative.GetFirstName]. She has already gone through this ordeal once before and so knows what I am experiencing and what I may experience as the ordeal continues. She provided me with some comforting advice. "
+ ml_pregnancy.055.a:0 "Thank you"
+
+ ml_pregnancy.056.t:0 "Craving for different food"
+ ml_pregnancy.056.desc:0 "Lately I have been wanting to eat different things. Things that some of my courtiers and cooks have found difficult to provide for me. However these cravings are driving me crazy. What should I eat?"
+ ml_pregnancy.056.everything:0 "It does not matter 'what' as long as it is a LOT."
+ ml_pregnancy.056.meat_1:0 "I wonder what a quail's foot tastes like..."
+ ml_pregnancy.056.meat_2:0 "I am really feeling hungry for hare's head..."
+ ml_pregnancy.056.meat_3:0 "I want a trout's eye! NOW!"
+ ml_pregnancy.056.husband:0 "I will ask my husband about it."
+
+ ml_pregnancy.057.t:0 "Wife's cravings"
+ ml_pregnancy.057.desc:0 "the pregnancy has caused my wife to develop quite the unusual tastes. Most of what she asks for dinner nowadays ranges from mildly unsettling to positively revolting. Still, scholars do agree that a pregnant woman's cravings should always be accommodated..."
+ ml_pregnancy.057.everything:0 "I will make sure that she gets all she wants and more."
+ ml_pregnancy.057.meat_1:0 "Are you sure you do not mean a quail's *leg*, dear?"
+ ml_pregnancy.057.meat_1:0 "Wh- a hare's head?"
+ ml_pregnancy.057.meat_1:0 "Ugh! Why on Earth would you want a fish's eye?!"
+ ml_pregnancy.057.no:0 "I have no money to spend on this nonsense."
+
+#######################################
+# Laying in and Churching
+#######################################
+ ml_pregnancy.060.t:0 "The Lying in"
+ ml_pregnancy.060.desc:0 "I am to spend the next month laying in my bedchambers as I recover from my ordeal of giving birth to my baby [baby.getBoyGirl]. I will have my courtiers to help me and my family to come and visit me during this period as I recover from my ordeal."
+ ml_pregnancy.060.a:0 "Just one more month"
+
+ ml_pregnancy.061.t:0 "The Churching"
+ ml_pregnancy.061.desc:0 "A month has passed since I gave birth to little [baby.GetFirstName]. As is tradition, I should undergo my Churching, as any good Christian mother does, and rejoin the Holy Church now that my body has been cleansed of all impurities. "
+ ml_pregnancy.061.a:0 "I cannot wait to take the communion again!"
+
+ ml_pregnancy.062.t:0 "The Churching - Communion"
+ ml_pregnancy.062.desc:0 "I took the communion from the priest's hand and a warm sense of bliss filled my heart. I feel whole and at peace once again, ready to put the pain and unclean memories of my labor behind, and move forward with my life."
+ ml_pregnancy.062.a:0 "I feel so relieved now."
+
+ ml_pregnancy.063.t:0 "The Churching"
+ ml_pregnancy.063.desc:0 "As is tradition, my wife [wife.GetFirstName] underwent her churching after recovering and cleansing herself from the recent pregnancy. She felt much better when she returned, clearly relieved to have fully rejoined the Church after her forced abstinence."
+ ml_pregnancy.063.a:0 "I am happy for her."
+#######################################
+# Polygamous complications
+#######################################
+ ml_pregnancy.066.t:0 "Jealous Wife"
+ ml_pregnancy.066.desc:0 "My [pregnant_concubine.GetRelation] is pregnant and I have been spending time with her comforting her. However, my [first_wife.getRelation] [first_wife.getFirstName] is rather upset at all the attention I am providing [pregnant_concubine.GetFirstName] and wants me to spend time with her."
+ ml_pregnancy.066.a:0 "Spend some time with [first_wife.getFirstName]"
+ ml_pregnancy.066.a:0 "Try to find a balance"
+ ml_pregnancy.066.a:0 "Spend some time with [pregnant_concubine.getFirstName]"
+
+ ml_pregnancy.067.t:0 "Multiple pregnant wives"
+ ml_pregnancy.067.desc:0 "I have more than one pregnant wife within my household at the same time. While this is truly a blessed time for the family. It does mean dealing with extra stress as the two women go through the ordeal at the same time. And it means trying to find time to comfort both of them."
+ ml_pregnancy.067.a:0 "This quite an ordeal"
+
+ ml_pregnancy.068.t:0 "Wives supporting each other"
+ ml_pregnancy.068.desc:0 "I have recently seen [supportive_wife.GetFirstName] spending a lot of time with [pregnant_wife.GetFirstName]. The two women are supporting each other during this ordeal for [pregnant_wife.GetFirstName]. It has thankfully helped [pregnant_wife.GetFirstName] deal with the stress of the ordeal, and made the household a bit more harmonious. "
+ ml_pregnancy.068.a:0 "Thats good to hear"
+#######################################
+# Madry
+#######################################
+
+#######################################
+# The Gossiping
 #######################################
 
 ##############################################

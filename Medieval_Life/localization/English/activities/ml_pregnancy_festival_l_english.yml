@@ -1,0 +1,30 @@
+﻿l_english:
+ activity_ml_pregnancy_pagan_fertility_festival:0 "Fertility Festival"
+ activity_ml_pregnancy_pagan_fertility_festival_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Fertility Festival"
+ activity_ml_pregnancy_pagan_fertility_festival_desc:0 "When a woman is pregnant it is time to celebrate, to honour her, and to perform offerings and sacrifices to the [Root.getPantheonTerm]. May the [Root.getPantheonTerm] grant the woman's blessings for her baby.
+."
+ activity_ml_pregnancy_pagan_fertility_festival_selection_tooltip: "Host a great Fertility celebration in your [capital|E].\n\n$RICE_yazd_celebrate_sadeh_festival_context_tooltip$"
+ activity_ml_pregnancy_pagan_fertility_festival_host_desc: "\n$BULLET_WITH_TAB$[prestige_i] [prestige|E]\n$BULLET_WITH_TAB$[piety_i] [piety|E]\n$BULLET_WITH_TAB$Lose [stress_loss_i|E] [stress|E]\n$BULLET_WITH_TAB$ [GetModifier('RICE_yazd_recently_celebrated_sadeh').GetNameWithTooltip] [character_modifier|E]"
+ activity_ml_pregnancy_pagan_fertility_festival_guest_desc: "$activity_ml_pregnancy_pagan_fertility_festival_host_desc$"
+ activity_ml_pregnancy_pagan_fertility_festival_province_desc: ""
+
+ activity_ml_pregnancy_pagan_fertility_festival_destination_selection: "$activity_ml_pregnancy_pagan_fertility_festival_province_desc$"
+ activity_ml_pregnancy_pagan_fertility_festival_guest_help_text: "$activity_ml_pregnancy_pagan_fertility_festival$"
+ activity_ml_pregnancy_pagan_fertility_festival_predicted_cost: "The cost of a festival depends on the [activity_options|E] you select."
+
+ activity_ml_pregnancy_pagan_fertility_festival_conclusion_desc: "The [GetActivityType( 'activity_ml_pregnancy_pagan_fertility_festival' ).GetName] is over. It was a fun and relaxing experience!"
+ ml_pregnancy_pagan_fertility_festival_type: "Festival Type"
+ ml_pregnancy_pagan_fertility_festival_type_modest: "Modest Celebration"
+ ml_pregnancy_pagan_fertility_festival_type_modest_desc: "$EFFECT_LIST_BULLET$ Your [court|E] will host a modest fertility Festival.\n$EFFECT_LIST_BULLET$Gain an additional [prestige_i|E] #V 50#! on top of other boons you get through other events\n\n#Fertility Festivals are important in the life of a woman, but we should be careful not to go overboard and be frugal when celebrating it.#!"
+ ml_pregnancy_pagan_fertility_festival_type_grand: "Grand Celebration"
+ ml_pregnancy_pagan_fertility_festival_type_grand_desc: "$EFFECT_LIST_BULLET$ Your [court|E] will expend more resources for this fertility Festival.\n$EFFECT_LIST_BULLET$ Gain an additional [prestige_i|E] #V 150#! on top of other boons you get through other events\n\n#Fertility Festivals are important in the life of a woman, so this occasion has to be really festive!#!"
+
+ ml_pregnancy_pagan_fertility_festival_festival_phase: "Festival"
+ ml_pregnancy_pagan_fertility_festival_festival_phase_desc: "The Fertility festival is under way!"
+ 
+
+ ml_pregnancy_pagan_fertility_festival_completed_log_title:0 "Finished Partaking in the Fertility Festival"
+ ml_pregnancy_pagan_fertility_festival_completed_log:0 "[CHARACTER.GetShortUIName|U] finished partaking in the Fertility Festival"
+ TRAVEL_NAME_FOR_activity_ml_pregnancy_pagan_fertility_festival:0 "[Character.GetFirstNamePossessiveNoTooltip] $activity_ml_pregnancy_pagan_fertility_festival$"
+ ml_pregnancy_pagan_fertility_festival_grand_cost_amount:0 "Grand Fertility Festival"
+ ml_pregnancy_pagan_fertility_festival_chak_chak_cost_amount:0 "Fertility Festival at Chak-Chak"
