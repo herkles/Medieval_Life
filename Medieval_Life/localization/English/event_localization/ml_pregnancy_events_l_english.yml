@@ -62,7 +62,7 @@
  ml_pregnancy.017.a:0 "Hopefully the worst has passed."
 
  ml_pregnancy.018.t:0 "[pregnant_lady.GetFirstName] has recovered"
- ml_pregnancy.018.desc:0 "My treatment is finally showing some results my [pregnant_lady.GetFromRelation] [pregnant_lady.GetFirstName] is sleeping and eating regularly again, and her cramps have subsidized. The pregnancy is not over yet, but she might be able to make it after all."
+ ml_pregnancy.018.desc:0 "My treatment is finally showing some results my [pregnant_lady.GetRelation] [pregnant_lady.GetFirstName] is sleeping and eating regularly again, and her cramps have subsidized. The pregnancy is not over yet, but she might be able to make it after all."
  ml_pregnancy.018.a:0 "Wonderful!"
 
  ml_pregnancy.019.t:0 "[pregnant_lady.GetFirstName] has recovered"
@@ -99,15 +99,15 @@
  ml_pregnancy.025.a:0 "I am so tired and- what was it again?"
 
  ml_pregnancy.026.t:0 "Wife has fully recovered"
- ml_pregnancy.026.desc:0 "My wife [From.GetFirstName] went through an extremely painful and dangerous labor, but she seems to have miraculously recovered from it without any permanent damage."
+ ml_pregnancy.026.desc:0 "My wife [pregnant_lady.GetFirstName] went through an extremely painful and dangerous labor, but she seems to have miraculously recovered from it without any permanent damage."
  ml_pregnancy.026.a:0 "This is wonderful news!"
 
  ml_pregnancy.027.t:0 "Wife has partial recovered"
- ml_pregnancy.027.desc:0 "My wife [From.GetFirstName] went through an extremely painful and dangerous labor and, while she managed to survive it, she has been left weakened and fragile after the ordeal."
+ ml_pregnancy.027.desc:0 "My wife [pregnant_lady.GetFirstName] went through an extremely painful and dangerous labor and, while she managed to survive it, she has been left weakened and fragile after the ordeal."
  ml_pregnancy.027.a:0 "Is the womb still in working condition though?"
 
  ml_pregnancy.028.t:0 "Wife hasn't recovered"
- ml_pregnancy.028.desc:0 "My wife [From.GetFirstName] went through an extremely painful and dangerous labor and, while her body managed to survive largely unscathed, her mind was unfortunately shattered by the hellish experience."
+ ml_pregnancy.028.desc:0 "My wife [pregnant_lady.GetFirstName] went through an extremely painful and dangerous labor and, while her body managed to survive largely unscathed, her mind was unfortunately shattered by the hellish experience."
  ml_pregnancy.028.a:0 "t least the body is fine."
 
 #######################################
@@ -118,7 +118,7 @@
  ml_pregnancy.030.a:0 "It's well worth the nausea!"
 
  ml_pregnancy.031.t:0 "Pregnancy"
- ml_pregnancy.031.desc:0 "I could scarcely believe it, but the pregnancy has made my [GetFromRelation] [From.GetFirstName] look more beautiful than she ever was. Whenever we are in the same room I can hardly take my eyes off her..."
+ ml_pregnancy.031.desc:0 "I could scarcely believe it, but the pregnancy has made my [pregnant_wife.GetRelation] [pregnant_wife.GetFirstName] look more beautiful than she ever was. Whenever we are in the same room I can hardly take my eyes off her..."
  ml_pregnancy.031.a:0 "Better make a move quickly!"
  ml_pregnancy.031.b:0 "She is with child. I should not look at her this way."
 
@@ -150,11 +150,11 @@
  ml_pregnancy.036.a:0 "Oh you!"
 
  ml_pregnancy.037.t:0 "Spouse bought you new clothes"
- ml_pregnancy.037.desc:0 "[From.GetFirstName] was happy to buy me new clothes. Being able to wear something that is both nice and comfortable has certainly improved my disposition."
+ ml_pregnancy.037.desc:0 "[spouse.GetFirstName] was happy to buy me new clothes. Being able to wear something that is both nice and comfortable has certainly improved my disposition."
  ml_pregnancy.037.a:0 "I feel much better now."
 
  ml_pregnancy.038.t:0 "Spouse won't buy you clothes"
- ml_pregnancy.038.desc:0 "Unbelievable! [From.GetFirstName] refused to buy me new clothes! Am I not already under enough stress as it is"
+ ml_pregnancy.038.desc:0 "Unbelievable! [spouse.GetFirstName] refused to buy me new clothes! Am I not already under enough stress as it is"
  ml_pregnancy.038.a:0 "He never thinks about how I feel."
 
 ##############################################
@@ -173,7 +173,7 @@
  ml_pregnancy.041.d:0 "I vow to be temperate and avoid all excesses."
 
  ml_pregnancy.042.t:0 "Remembering my Vow"
- ml_pregnancy.042.desc:0 "The vow was not in vain. I have been blessed with a beautiful [baby.getGirlBoy]. My baby is alive and with me. As my [baby.GetGirlBoy] is feeding from my breast, I remember my vow. I remember what I promised the Holy Mother"
+ ml_pregnancy.042.desc:0 "The vow was not in vain. I have been blessed with a beautiful [baby.GetRelation]. My baby is alive and with me. As my [baby.GetRelation] is feeding from my breast, I remember my vow. I remember what I promised the Holy Mother"
  ml_pregnancy.042.a:0 "I must still keep true to my vow."
  ml_pregnancy.042.b:0 "I think it is time to turn my mind back to mundane concerns."
 
@@ -185,12 +185,12 @@
 # Offering to the Gods
 #######################################
  ml_pregnancy.045.t:0 "Offerings for my child"
- ml_pregnancy.045.desc:0 "I cannot stop worrying about my unborn child. Shall I finish making my preparations to ask the [root.GetPantheonTerm] for blessings for my child? or is the time not right?"
- ml_pregnancy.045.a:0 "I will make an offering to the [root.GetPantheonTerm]."
+ ml_pregnancy.045.desc:0 "I cannot stop worrying about my unborn child. Shall I finish making my preparations to ask the [root.PantheonTerm] for blessings for my child? or is the time not right?"
+ ml_pregnancy.045.a:0 "I will make an offering to the [root.PantheonTerm]."
  ml_pregnancy.045.b:0 "It would be too dangerous to go out alone in my condition."
 
  ml_pregnancy.046.t:0 "Making my offerings"
- ml_pregnancy.046.desc:0 "As the smoke of my offering rises to the sky, I can almost hear the faint whispers of the [root.GetPantheonTerm] traveling through the wind. I have called the attention of the immortals, it is now time to make my request."
+ ml_pregnancy.046.desc:0 "As the smoke of my offering rises to the sky, I can almost hear the faint whispers of the [root.PantheonTerm] traveling through the wind. I have called the attention of the immortals, it is now time to make my request."
  ml_pregnancy.046.b:0 "Grant me a strong and healthy child!"
  ml_pregnancy.046.b:0 "I only hope to have a beautiful and healthy child!"
  ml_pregnancy.046.b:0 "WhfI wish for my child to be bright and healthy!"
@@ -209,7 +209,7 @@
  ml_pregnancy.051.a:0 "I am so glad you came!"
 
  ml_pregnancy.052.t:0 "Loving husband spends time with you"
- ml_pregnancy.052.desc:0 "My loving husband [Spouse.getName] has come to visit me and provide me solace during these times. He was so attentive to my needs and calmed me even though I cried for some reason. "
+ ml_pregnancy.052.desc:0 "My loving husband [Spouse.GetFirstName] has come to visit me and provide me solace during these times. He was so attentive to my needs and calmed me even though I cried for some reason. "
  ml_pregnancy.052.a:0 "I am so lucky to have someone like you"
 
  ml_pregnancy.053.t:0 "Familial comfort and solace"
@@ -244,7 +244,7 @@
 # Laying in and Churching
 #######################################
  ml_pregnancy.060.t:0 "The Lying in"
- ml_pregnancy.060.desc:0 "I am to spend the next month laying in my bedchambers as I recover from my ordeal of giving birth to my baby [baby.getBoyGirl]. I will have my courtiers to help me and my family to come and visit me during this period as I recover from my ordeal."
+ ml_pregnancy.060.desc:0 "I am to spend the next month laying in my bedchambers as I recover from my ordeal of giving birth to my baby [baby.GetRelation]. I will have my courtiers to help me and my family to come and visit me during this period as I recover from my ordeal."
  ml_pregnancy.060.a:0 "Just one more month"
 
  ml_pregnancy.061.t:0 "The Churching"
@@ -262,7 +262,7 @@
 # Polygamous complications
 #######################################
  ml_pregnancy.066.t:0 "Jealous Wife"
- ml_pregnancy.066.desc:0 "My [pregnant_concubine.GetRelation] is pregnant and I have been spending time with her comforting her. However, my [first_wife.getRelation] [first_wife.getFirstName] is rather upset at all the attention I am providing [pregnant_concubine.GetFirstName] and wants me to spend time with her."
+ ml_pregnancy.066.desc:0 "My [pregnant_concubine.GetRelation] is pregnant and I have been spending time with her comforting her. However, my [first_wife.GetRelation] [first_wife.getFirstName] is rather upset at all the attention I am providing [pregnant_concubine.GetFirstName] and wants me to spend time with her."
  ml_pregnancy.066.a:0 "Spend some time with [first_wife.getFirstName]"
  ml_pregnancy.066.a:0 "Try to find a balance"
  ml_pregnancy.066.a:0 "Spend some time with [pregnant_concubine.getFirstName]"
