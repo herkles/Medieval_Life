@@ -23,10 +23,7 @@ ml_pregnancy_mary_vow_decision = {
 	effect = {
 		custom_tooltip = ml_pregnancy_mary_vow_decision_effect.tt
 		trigger_event = religious_decision.0001
-		add_character_flag = {
-			flag = flag_ml_pregnancy_took_mary_vow
-			days = 1825
-			}
+		add_character_flag = { flag = flag_ml_pregnancy_took_mary_vow }
 	}
 
 	ai_check_interval = 60

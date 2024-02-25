@@ -1131,15 +1131,22 @@ ml_pregnancy.040 = {# Make a vow to the Virign Mary
 	theme = stewardship
 	override_background = { reference = temple_church }
 	
-	immediate = {
-
-	}
 	
-	option = { # Allow me to help!
-		name = ml_pregnancy.040.a	
-
+	option = {# Go and make a vow
+		name = ml_pregnancy.040.a
+		hidden_effect = {
+			trigger_event = {
+				id = ml_pregnancy.041
+				days = { 1 5 }
+			}
+		}	
 	}
-	
+	option = {# Go and make a vow
+		name = ml_pregnancy.040.b
+		hidden_effect = {
+			remove_character_flag = flag_ml_pregnancy_took_mary_vow
+		}
+	}	
 
 }
 ml_pregnancy.041 = {# What sort of Vow do you make?
@@ -1149,22 +1156,30 @@ ml_pregnancy.041 = {# What sort of Vow do you make?
 	theme = stewardship
 	override_background = { reference = temple_church }
 	
-	
-	
-	trigger = {
-
+	option = {# Vow to be Chaste and Virtuous
+		name = ml_pregnancy.041.a
+		hidden_effect = {
+			add_character_flag = ml_vow_chaste_flag
+		}	
 	}
-	
-	immediate = {
-
+	option = {# Vow to be Humble
+		name = ml_pregnancy.041.b
+		hidden_effect = {
+			add_character_flag = ml_vow_humble_flag
+		}		
 	}
-	
-	option = { # Allow me to help!
-		name = ml_pregnancy.041.a	
-
+	option = {# vow to be charitable
+		name = ml_pregnancy.041.c
+		hidden_effect = {
+			add_character_flag = ml_vow_charitable_flag
+		}		
+	}	
+	option = {# Vow to be temperate
+		name = ml_pregnancy.041.e
+		hidden_effect = {
+			add_character_flag = ml_vow_temperate_flag
+		}	
 	}
-	
-
 }
 ml_pregnancy.042 = {# Keeping vow after baby is born
 	type = character_event
@@ -1173,21 +1188,110 @@ ml_pregnancy.042 = {# Keeping vow after baby is born
 	theme = stewardship
 	override_background = { reference = temple_church }
 	
-	
-	
 	trigger = {
+		has_character_flag = flag_ml_pregnancy_took_mary_vow
+	}
 
+	option = {# Keep vow
+		name = ml_pregnancy.042.a
+		add_piety = minor_piety_gain
+		if = {# Chaste Vow
+			limit = { has_character_flag = ml_vow_chaste_flag }
+			add_character_modifier = {
+				modifier = ml_vow_chaste_modifier
+				months = 2
+			}
+			stress_impact = {
+				lustful = medium_stress_impact_gain
+				chaste = minior_stress_impact_loss
+				temperate = miniscule_stress_impact_loss
+				zealous = miniscule_stress_impact_loss
+				rakish = minior_stress_impact_gain
+			}
+		}
+		if = {# Humble Vow
+			limit = { has_character_flag = ml_vow_humble_flag }
+			add_character_modifier = {
+				modifier = ml_vow_humble_modifier
+				months = 2
+			}
+			stress_impact = {
+				arrogant = medium_stress_impact_gain
+				humble = minior_stress_impact_loss
+				temperate = miniscule_stress_impact_loss
+				zealous = miniscule_stress_impact_loss
+			}
+		}
+		if = {# Charitable Vow
+			limit = { has_character_flag = ml_vow_charitable_flag }
+			add_character_modifier = {
+				modifier = ml_vow_charitable_modifier
+				months = 2
+			}
+			stress_impact = {
+				greedy = minor_stress_impact_gain
+				generous = minior_stress_impact_loss
+				improvident = miniscule_stress_impact_loss
+				profligate = miniscule_stress_impact_gain	
+				zealous = miniscule_stress_impact_loss			
+			}
+		}
+		if = {# Temperate Vow
+			limit = { has_character_flag = ml_vow_temperate_flag }
+			add_character_modifier = {
+				modifier = ml_vow_temperate_modifier
+				months = 2
+			}
+			stress_impact = {
+				gluttonous = minor_stress_impact_gain
+				temperate = minior_stress_impact_loss
+				drunkard = miniscule_stress_impact_gain
+				hashishiyah = miniscule_stress_impact_gain	
+				rakish = miniscule_stress_impact_gain	
+				zealous = miniscule_stress_impact_loss
+			}
+		}
+	}
+	option = {# Don't Keep vow
+		name = ml_pregnancy.042.b	
+		add_piety = medium_piety_loss
+		stress_impact = {
+			honest = minor_stress_impact_gain
+			zealous = minor_stress_impact_gain
+			holy_warrior = minor_stress_impact_gain
+			faith_warrior = minor_stress_impact_gain
+			base = miniscule_stress_impact_gain
+		}
+		hidden_effect = {
+			if = {# always get this if your child is naturally born sickly
+				limit = { has_character_flag = birth_child_will_become_sickly }
+				add_character_flag = ml_broke_virgin_vow_punishment_flag
+			}			
+			else_if = {# random chance for child to catch illness
+				limit = { NOT = { has_character_flag = birth_child_will_become_sickly } }
+				random_list = {
+					70 = { }
+					30 = { add_character_flag = ml_broke_virgin_vow_punishment_flag }
+				}
+			}
+
+		}
 	}
 	
-	immediate = {
-
+	after = {
+		if = {
+			limit = { has_character_flag = ml_broke_virgin_vow_punishment_flag }
+			trigger_event = {
+				id = ml_pregnancy.043
+				days = { 10 30 }
+			}
+		}
+		remove_character_flag = ml_vow_chaste_flag
+		remove_character_flag = ml_vow_humble_flag
+		remove_character_flag = ml_vow_charitable_flag
+		remove_character_flag = ml_vow_temperate_flag
+		remove_character_flag = flag_ml_pregnancy_took_mary_vow
 	}
-	
-	option = { # Allow me to help!
-		name = ml_pregnancy.042.a	
-
-	}
-	
 
 }
 ml_pregnancy.043 = {# Breaking the Vow and bad stuff happens
@@ -1197,21 +1301,19 @@ ml_pregnancy.043 = {# Breaking the Vow and bad stuff happens
 	theme = stewardship
 	override_background = { reference = temple_church }
 	
-	
-	
-	trigger = {
-
-	}
-	
 	immediate = {
-
+		scope:child = {
+			add_trait = sickly
+		}
 	}
 	
 	option = { # Allow me to help!
 		name = ml_pregnancy.043.a	
-
 	}
 	
+	after = {# Maintance
+		remove_character_flag = ml_broke_virgin_vow_punishment_flag
+	}
 
 }
 ##############################################

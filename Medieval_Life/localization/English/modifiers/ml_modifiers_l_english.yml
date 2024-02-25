@@ -4,3 +4,18 @@
 #######################################
  ml_mother_pregnancy_glow_modifier:0 "Pregnancy Glow"
  ml_mother_pregnancy_glow_modifier_desc:1 "Courtiers are saying this woman is glowing due to her pregnancy."
+#######################################
+# Virgin Mary Vows modifiers
+#######################################
+ ml_vow_chaste_modifier:0 "Pregnancy - Vow of Chastity"
+ ml_vow_chaste_modifier_desc:1 "his woman has vowed to the Holy Virgin that she will be chaste and avoid the temptations of the flesh."
+
+ ml_vow_humble_modifier:0 "Pregnancy - Vow of Humility"
+ ml_vow_humble_modifier_modifier_desc:1 "This woman has vowed to the Holy Virgin that she will show humility and avoid dressing immodestly."
+
+ ml_vow_charitable_modifier:0 "Pregnancy - Vow of Charity"
+ ml_vow_charitable_modifier_desc:1 "This woman has vowed to the Holy Virgin that she will care for the sick and the needy."
+
+ ml_vow_temperate_modifier:0 "Pregnancy - Vow of Temperance"
+ ml_vow_temperate_modifier_desc:1 "This woman has vowed to the Holy Virgin that she will show restraint in her habits and forsake all excesses."
+
