@@ -185,26 +185,26 @@
 # Offering to the Gods
 #######################################
  ml_pregnancy.045.t:0 "Offerings for my child"
- ml_pregnancy.045.desc:0 "I cannot stop worrying about my unborn child. Shall I finish making my preparations to ask the [root.PantheonTerm] for blessings for my child? or is the time not right?"
- ml_pregnancy.045.a:0 "I will make an offering to the [root.PantheonTerm]."
+ ml_pregnancy.045.desc:0 "I cannot stop worrying about my unborn child. Shall I finish making my preparations to ask the [ROOT.Char.GetFaith.PantheonTerm] for blessings for my child? or is the time not right?"
+ ml_pregnancy.045.a:0 "I will make an offering to the [ROOT.Char.GetFaith.PantheonTerm]."
  ml_pregnancy.045.b:0 "It would be too dangerous to go out alone in my condition."
 
  ml_pregnancy.046.t:0 "Making my offerings"
- ml_pregnancy.046.desc:0 "As the smoke of my offering rises to the sky, I can almost hear the faint whispers of the [root.PantheonTerm] traveling through the wind. I have called the attention of the immortals, it is now time to make my request."
+ ml_pregnancy.046.desc:0 "As the smoke of my offering rises to the sky, I can almost hear the faint whispers of the [ROOT.Char.GetFaith.PantheonTerm] traveling through the wind. I have called the attention of the [ROOT.Char.GetFaith.PantheonTerm], it is now time to make my request."
  ml_pregnancy.046.b:0 "Grant me a strong and healthy child!"
  ml_pregnancy.046.b:0 "I only hope to have a beautiful and healthy child!"
- ml_pregnancy.046.b:0 "WhfI wish for my child to be bright and healthy!"
+ ml_pregnancy.046.b:0 "I wish for my child to be bright and healthy!"
 
 #######################################
 # Familial Solace and Joys
 #######################################
- ml_pregnancy.050.t:0 "see pregnant lover?"
+ ml_pregnancy.050.t:0 "Should I see [lover.GetFirstName]"
  ml_pregnancy.050.desc.male_lover:0 "I can only imagine how [lover.GetFirstName] must feel as if being unable to publicly declare our feelings for each other was not enough, she now must lie about the fruit of our love. However, I do have a chance to visit her and give her my solace."
  ml_pregnancy.051.desc.female_lover:0 "I can only imagine how [lover.GetFirstName] must feel as if being unable to publicly declare our feelings for each other was not enough, she now has to carry a child against her will. However, I do have a chance to visit her and give her my solace. "
  ml_pregnancy.050.a:0 "I must vist her"
  ml_pregnancy.050.b:0 "It would be too dangerous right now."
 
- ml_pregnancy.051.t:0 "Lover comes to visit"
+ ml_pregnancy.051.t:0 "[lover.GetFirstName] comes to visit"
  ml_pregnancy.051.desc:0 "When I discovered [lover.GetFirstName] lurking in my chambers I barely managed to restrain myself from screaming and accidentally called the guards on [lover.GetHerHim]. My lover told me that [lover.GetSheHe] wished to comfort me in this stressful period of my life."
  ml_pregnancy.051.a:0 "I am so glad you came!"
 

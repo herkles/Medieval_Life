@@ -22,7 +22,7 @@ ml_pregnancy_mary_vow_decision = {
 
 	effect = {
 		custom_tooltip = ml_pregnancy_mary_vow_decision_effect.tt
-		trigger_event = religious_decision.0001
+		trigger_event = ml_pregnancy.040
 		add_character_flag = { flag = flag_ml_pregnancy_took_mary_vow }
 	}
 
@@ -37,7 +37,44 @@ ml_pregnancy_mary_vow_decision = {
 		ai_value_modifier = { ai_zeal = 1 }		
 	}
 }
+ml_pregnancy_offerings_decision = {
+	picture = "gfx/interface/illustrations/decisions/ml_pregnancy_offering_decision.dds"
 
+	desc = ml_pregnancy_offerings_decision_desc
+	selection_tooltip = ml_pregnancy_offerings_decision_tooltip
+
+	is_shown = { 
+		faith.religion = { is_in_family = rf_pagan } 
+	}	
+
+	is_valid = {
+		faith.religion = { is_in_family = rf_pagan }
+		custom_description = {
+			text = ml_pregnancy_offering
+			NOT = { has_character_flag = ml_pregnancy_offerings_flag }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+	}
+
+	effect = {
+		custom_tooltip = ml_pregnancy_offerings_decision_effect.tt
+		trigger_event = ml_pregnancy.045
+		add_character_flag = { flag = ml_pregnancy_offerings_flag }
+	}
+
+	ai_check_interval = 60
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+		ai_value_modifier = { ai_zeal = 1 }		
+	}
+}
 
 
 

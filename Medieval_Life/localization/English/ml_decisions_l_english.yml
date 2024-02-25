@@ -2,7 +2,12 @@
 #######################################
 # Pregnancy Decisions 
 #######################################
-  ml_pregnancy_mary_vow_decision:0 "Make a vow to the Virgin  Mary"
+  ml_pregnancy_mary_vow_decision:0 "Make a vow to the Virgin Mary"
   ml_pregnancy_mary_vow_decision_desc:0 "The holy blessed virgin Mary was pregnant with our saviour, with Jesus, in her womb. As such it is common for women who are with child to make a vow to the Mother of God in order to maybe be blessed during this troubling time. "
   ml_pregnancy_mary_vow_decision_confirm:0 "Make a vow"
   ml_pregnancy_mary_vow_decision_tooltip:0 "You shall make a vow to Mary"
+
+  ml_pregnancy_offerings_decision:0 "Make an Offering to the [ROOT.Char.GetFaith.PantheonTerm]"
+  ml_pregnancy_offerings_decision_desc:0 "It is a custom and tradition to make offerings to the [ROOT.Char.GetFaith.PantheonTerm] for a healthy child. [ROOT.Char.GetFaith.HouseholdGodName], [ROOT.Char.GetFaith.HealthGodName], [ROOT.Char.GetFaith.FertilityGodName] are all said to look upon a mother who provides offerings with kindness and might even provide a blessing."
+  ml_pregnancy_offerings_decision_confirm:0 "Prepare the Offerings"
+  ml_pregnancy_offerings_decision_tooltip:0 "You will begin preparations to make an offering."
