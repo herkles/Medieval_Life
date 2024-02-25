@@ -1,0 +1,18 @@
+﻿##################################################
+# Spouse Dress Opinions
+##################################################
+ml_husband_no_buys_clothes_opinion = {
+	opinion = -10
+	years = 1
+	decaying = yes
+}
+ml_husband_buys_clothes_opinion = {
+	opinion = 5
+	years = 1
+	decaying = yes
+}
+ml_husband_flatters_wife_opinion = {
+	opinion = 10
+	years = 1
+	decaying = yes
+}

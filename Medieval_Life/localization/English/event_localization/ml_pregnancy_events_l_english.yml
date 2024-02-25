@@ -140,7 +140,7 @@
  ml_pregnancy.034.d:0 "No need to go through all this trouble for some dress."
 
  ml_pregnancy.035.t:0 "Wife wants new clothes"
- ml_pregnancy.035.desc:0 "My wife [spouse.GetFirstName] asked me to buy her some new clothes. Because of the pregnancy, she has outgrown most of her wardrobe and now she feels frustrated for not having anything nice to wear whenever she needs to make an appearance at court."
+ ml_pregnancy.035.desc:0 "My wife [pregnant_wife.GetFirstName] asked me to buy her some new clothes. Because of the pregnancy, she has outgrown most of her wardrobe and now she feels frustrated for not having anything nice to wear whenever she needs to make an appearance at court."
  ml_pregnancy.035.a:0 "My dear, you do not need new clothes. You are already wonderful"
  ml_pregnancy.035.a:0 "Very well, summon the tailor."
  ml_pregnancy.035.a:0 "Why? So that she can throw them away a few months from now?"

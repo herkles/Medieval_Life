@@ -515,6 +515,7 @@ ml_pregnancy.023 = {# Complete Recovery
 	
 	immediate = {
 		remove_character_flag = ml_had_dangerous_pregnancy_complication
+		add_character_flag = ml_mother_pregnancy_full_recovery
 	}
 	
 	option = { # Allow me to help!
@@ -546,8 +547,7 @@ ml_pregnancy.023 = {# Complete Recovery
 		if = {# remove Undernourishment
 			limit = { has_character_modifier = ml_had_dangerous_pregnancy_complication_sleep_walking  }
 			remove_character_modifier = ml_had_dangerous_pregnancy_complication_sleep_walking 
-		}
-			
+		}			
 		stress_impact = {# This is great
 			base = medium_stress_impact_loss
 		}
@@ -577,6 +577,8 @@ ml_pregnancy.024 = {# Partial Recovery
 	
 	immediate = {
 		remove_character_flag = ml_had_dangerous_pregnancy_complication
+		add_character_flag = ml_mother_pregnancy_half_recovery
+
 	}
 	
 	option = { # Allow me to help!
@@ -632,8 +634,6 @@ ml_pregnancy.025 = {# remains infirm
 	theme = stewardship
 	override_background = { reference = physicians_study }
 	
-	
-	
 	trigger = {
 		has_character_flag = ml_had_dangerous_pregnancy_complication
 		NOT = {	has_character_flag = ml_had_dangerous_pregnancy_recovered }
@@ -641,6 +641,7 @@ ml_pregnancy.025 = {# remains infirm
 	
 	immediate = {
 		remove_character_flag = ml_had_dangerous_pregnancy_complication
+		add_character_flag = ml_mother_pregnancy_full_recovery
 	}
 	
 	option = { # Allow me to help!
@@ -697,14 +698,23 @@ ml_pregnancy.026 = {# Spouse notified of full recovery
 	override_background = { reference = physicians_study }
 	
 	immediate = {
-		primary_spouse = {
-			save_scope_as = pregnant_lady
+		if = {
+			limit = { any_spouse = { has_character_flag = ml_mother_pregnancy_half_recovery } }
+			any_spouse = { save_scope_as = pregnant_lady }
 		}
 	}
 	
 	option = { # Allow me to help!
 		name = ml_pregnancy.026.a	
-
+		stress_impact = {# This is great
+			base = minor_stress_impact_loss
+		}
+	}
+	
+	after = {
+		scope:pregnant_lady = {
+			remove_character_flag = ml_mother_pregnancy_full_recovery
+		}
 	}	
 
 }
@@ -716,15 +726,24 @@ ml_pregnancy.027 = {# Spouse notified of partial recovery
 	override_background = { reference = physicians_study }
 
 	immediate = {
-		primary_spouse = {
-			save_scope_as = pregnant_lady
+		if = {
+			limit = { any_spouse = { has_character_flag = ml_mother_pregnancy_half_recovery } }
+			any_spouse = { save_scope_as = pregnant_lady }
 		}
 	}
 	
 	option = { # Allow me to help!
 		name = ml_pregnancy.027.a	
-
-	}	
+		stress_impact = {# This is great
+			base = miniscule_stress_impact_loss
+		}
+	}
+	
+	after = {
+		scope:pregnant_lady = {
+			remove_character_flag = ml_mother_pregnancy_half_recovery
+		}
+	}
 
 }
 ml_pregnancy.028 = {# Spouse notified of infirmity
@@ -734,10 +753,9 @@ ml_pregnancy.028 = {# Spouse notified of infirmity
 	theme = stewardship
 	override_background = { reference = physicians_study }
 	
-	immediate = {
-		primary_spouse = {
-			save_scope_as = pregnant_lady
-		}
+	if = {
+		limit = { any_spouse = { has_character_flag = ml_mother_pregnancy_remains_infirm } }
+		any_spouse = { save_scope_as = pregnant_lady }
 	}
 	
 	option = { # Allow me to help!
@@ -745,33 +763,23 @@ ml_pregnancy.028 = {# Spouse notified of infirmity
 
 	}
 
+	after = {
+		scope:pregnant_lady = {
+			remove_character_flag = ml_mother_pregnancy_remains_infirm
+		}
+	}
+
 }
 ##############################################
 # Pregnancy Joy
 ##############################################
-ml_pregnancy.029 = {# Pregnancy Joys(Hidden)
-	type = character_event
-	hidden = yes
-	theme = stewardship
-
-	trigger = {
-		is_ruler = yes
-		is_landed = yes
-		is_pregnant = yes
-		has_trait = pregnant
-	}
-	after = {
-
-	}
-	
-}
 ml_pregnancy.030 = {# Pregnancy Glow
 	type = character_event
 	title = ml_pregnancy.030.t
 	desc = ml_pregnancy.030.desc
 	theme = stewardship
 	override_background = {
-		reference = courtyard
+		reference = relaxing_room
 	}
 	left_portrait = {
 		character = root
@@ -796,8 +804,16 @@ ml_pregnancy.030 = {# Pregnancy Glow
 			arrogant = medium_stress_impact_loss
 			base = minor_stress_impact_loss
 		}
-
 	}
+
+	after = {
+		primary_spouse = {
+			trigger_event = {
+				id = ml_pregnancy.031
+				days = { 2 5 }
+			}
+		}
+	}	
 	
 }
 ml_pregnancy.031 = {# Pregnancy Glow(Spouse)
@@ -805,33 +821,21 @@ ml_pregnancy.031 = {# Pregnancy Glow(Spouse)
 	title = ml_pregnancy.031.t
 	desc = ml_pregnancy.031.desc
 	theme = stewardship
-	override_background = {
-		reference = courtyard
-	}
+	override_background = {	reference = relaxing_room }
 	left_portrait = {
-		character = root
+		character = scope:pregnant_wife
 		animation = pregnant
 	}
 
-	trigger = {
-		is_ruler = yes
-		is_landed = yes
-		is_pregnant = yes
-		has_trait = pregnant
+	immediate = {
+		if = {
+			limit = { any_spouse = { has_character_modifier = ml_mother_pregnancy_glow_modifier } }
+			any_spouse = { save_scope_as = pregnant_wife }
+		}
 	}
 	
 	option = {# 
 		name = ml_pregnancy.031.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
-		stress_impact = {
-			depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
-		}
-
 	}
 	
 }
@@ -841,7 +845,7 @@ ml_pregnancy.032 = {# First pregnancy scare
 	desc = ml_pregnancy.032.desc
 	theme = stewardship
 	override_background = {
-		reference = courtyard
+		reference = relaxing_room
 	}
 	left_portrait = {
 		character = root
@@ -857,16 +861,9 @@ ml_pregnancy.032 = {# First pregnancy scare
 	
 	option = {# 
 		name = ml_pregnancy.032.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
 		stress_impact = {
-			depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
+			base = miniscule_stress_impact_gain
 		}
-
 	}
 	
 }
@@ -875,9 +872,7 @@ ml_pregnancy.033 = {# Baby kicks
 	title = ml_pregnancy.033.t
 	desc = ml_pregnancy.033.desc
 	theme = stewardship
-	override_background = {
-		reference = courtyard
-	}
+	override_background = { reference = relaxing_room }
 	left_portrait = {
 		character = root
 		animation = pregnant
@@ -892,16 +887,9 @@ ml_pregnancy.033 = {# Baby kicks
 	
 	option = {# 
 		name = ml_pregnancy.033.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
 		stress_impact = {
-		depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
+			base = miniscule_stress_impact_loss
 		}
-
 	}
 	
 }
@@ -911,7 +899,7 @@ ml_pregnancy.034 = {# Mother needs new dresses
 	desc = ml_pregnancy.034.desc
 	theme = stewardship
 	override_background = {
-		reference = courtyard
+		reference = relaxing_room
 	}
 	left_portrait = {
 		character = root
@@ -925,20 +913,47 @@ ml_pregnancy.034 = {# Mother needs new dresses
 		has_trait = pregnant
 	}
 	
-	option = {# 
+	option = {# eat less
 		name = ml_pregnancy.034.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
 		stress_impact = {
-			depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
+			gluttonous = minor_stress_impact_gain
+			temperate = minor_stress_impact_loss
+			comfort_eater = minor_stress_impact_gain
+			inappetetic = minor_stress_impact_loss
+			base = miniscule_stress_impact_gain
 		}
-
 	}
-	
+	option = {# Ask Husband
+		name = ml_pregnancy.034.b
+		hidden_effect = {
+			add_character_flag = ml_mother_pregnancy_ask_husband_flag
+			primary_spouse = {
+				trigger_event = {
+					id = ml_pregnancy.035
+					days = { 2 5 }
+				}
+			}
+		}
+	}	
+	option = {# Buy New Dresses
+		name = ml_pregnancy.034.c
+		remove_short_term_gold = minor_gold_min_value
+		stress_impact = {
+			improvident = minor_stress_impact_gain
+			profligate = minor_stress_impact_loss
+			base = miniscule_stress_impact_loss
+		}
+	}
+	option = {# Doesn't matter
+		name = ml_pregnancy.034.d
+		stress_impact = {
+			arrogant = minor_stress_impact_gain
+			lazy = minor_stress_impact_loss
+			profligate = minor_stress_impact_gain
+			reclusive = minor_stress_impact_loss
+			base = miniscule_stress_impact_gain
+		}
+	}		
 }
 ml_pregnancy.035 = {# pregnant wife wants new dresses
 	type = character_event
@@ -946,34 +961,71 @@ ml_pregnancy.035 = {# pregnant wife wants new dresses
 	desc = ml_pregnancy.035.desc
 	theme = stewardship
 	override_background = {
-		reference = courtyard
+		reference = relaxing_room
 	}
 	left_portrait = {
 		character = root
 		animation = pregnant
 	}
 
-	trigger = {
-		is_ruler = yes
-		is_landed = yes
-		is_pregnant = yes
-		has_trait = pregnant
-	}
-	
-	option = {# 
-		name = ml_pregnancy.035.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
-		stress_impact = {
-			depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
+	immediate = {
+		if = {
+			limit = { any_spouse = { has_character_flag = ml_mother_pregnancy_ask_husband_flag } }
+			any_spouse = { save_scope_as = pregnant_wife }
 		}
+	}	
 
+	option = {# Flattery
+		name = ml_pregnancy.035.a
+		trigger = {	diplomacy >= decent_skill_rating }
+		hidden_effect = {
+			primary_spouse = {
+				trigger_event = {
+					id = ml_pregnancy.036
+					days = { 2 5 }
+				}
+			}
+		}
 	}
-	
+	option = {# Buy Clothes for her
+		name = ml_pregnancy.035.a
+		remove_short_term_gold = minor_gold_min_value
+		stress_impact = {
+			improvident = minor_stress_impact_gain
+			profligate = minor_stress_impact_loss
+			base = miniscule_stress_impact_loss
+		}
+		hidden_effect = {
+			primary_spouse = {
+				trigger_event = {
+					id = ml_pregnancy.037
+					days = { 2 5 }
+				}
+			}
+		}
+	}
+	option = {# No.
+		name = ml_pregnancy.035.a
+		
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			generous = minor_stress_impact_gain
+			improvident = minor_stress_impact_gain
+			profligate = minor_stress_impact_gain
+			base = miniscule_stress_impact_gain
+		}
+		hidden_effect = {
+			primary_spouse = {
+				trigger_event = {
+					id = ml_pregnancy.038
+					days = { 2 5 }
+				}
+			}
+		}
+	}
+
 }
 ml_pregnancy.036 = {# Wife flattered by husband
 	type = character_event
@@ -981,32 +1033,29 @@ ml_pregnancy.036 = {# Wife flattered by husband
 	desc = ml_pregnancy.036.desc
 	theme = stewardship
 	override_background = {
-		reference = courtyard
+		reference = relaxing_room
 	}
 	left_portrait = {
 		character = root
 		animation = pregnant
 	}
 
-	trigger = {
-		is_ruler = yes
-		is_landed = yes
-		is_pregnant = yes
-		has_trait = pregnant
-	}
+	immediate = {
+		any_spouse = { save_scope_as = spouse }
+	}	
 	
 	option = {# 
 		name = ml_pregnancy.036.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
-		stress_impact = {
-			depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
+		add_opinion = {
+			target = scope:spouse
+			modifier = ml_husband_flatters_wife_opinion
+			opinion = 20
 		}
 
+	}
+
+	after = {
+		remove_character_flag = ml_mother_pregnancy_ask_husband_flag
 	}
 	
 }
@@ -1016,32 +1065,28 @@ ml_pregnancy.037 = {# Wife gets clothes from husband
 	desc = ml_pregnancy.037.desc
 	theme = stewardship
 	override_background = {
-		reference = courtyard
+		reference = relaxing_room
 	}
 	left_portrait = {
 		character = root
 		animation = pregnant
 	}
 
-	trigger = {
-		is_ruler = yes
-		is_landed = yes
-		is_pregnant = yes
-		has_trait = pregnant
+	immediate = {
+		any_spouse = { save_scope_as = spouse }
 	}
 	
 	option = {# 
 		name = ml_pregnancy.037.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
-		stress_impact = {
-			depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
+		reverse_add_opinion = {
+			target = scope:spouse
+			modifier = ml_husband_buys_clothes_opinion
+			opinion = 10
 		}
+	}
 
+	after = {
+		remove_character_flag = ml_mother_pregnancy_ask_husband_flag
 	}
 	
 }
@@ -1051,34 +1096,30 @@ ml_pregnancy.038 = {# Wife doesn't get clothes from husband
 	desc = ml_pregnancy.038.desc
 	theme = stewardship
 	override_background = {
-		reference = courtyard
+		reference = relaxing_room
 	}
 	left_portrait = {
 		character = root
 		animation = pregnant
 	}
 
-	trigger = {
-		is_ruler = yes
-		is_landed = yes
-		is_pregnant = yes
-		has_trait = pregnant
+	immediate = {
+		any_spouse = { save_scope_as = spouse }
 	}
 	
 	option = {# 
 		name = ml_pregnancy.038.a
-		add_character_modifier = {
-			modifier = ml_mother_pregnancy_glow_modifier
-			days = 80
-		}		
-		stress_impact = {
-			depressed_1 = miniscule_stress_impact_loss
-			arrogant = medium_stress_impact_loss
-			base = minor_stress_impact_loss
+		reverse_add_opinion = {
+			target = scope:spouse
+			modifier = ml_husband_no_buys_clothes_opinion
+			opinion = -10
 		}
-
 	}
 	
+	after = {
+		remove_character_flag = ml_mother_pregnancy_ask_husband_flag
+	}
+
 }
 ##############################################
 # Make vow to the Virigin Mary
@@ -1088,7 +1129,7 @@ ml_pregnancy.040 = {# Make a vow to the Virign Mary
 	title = ml_pregnancy.040.t
 	desc = ml_pregnancy.040.desc
 	theme = stewardship
-	override_background = { reference = garden }
+	override_background = { reference = temple_church }
 	
 	immediate = {
 
@@ -1106,7 +1147,7 @@ ml_pregnancy.041 = {# What sort of Vow do you make?
 	title = ml_pregnancy.041.t
 	desc = ml_pregnancy.041.desc
 	theme = stewardship
-	override_background = { reference = garden }
+	override_background = { reference = temple_church }
 	
 	
 	
@@ -1130,7 +1171,7 @@ ml_pregnancy.042 = {# Keeping vow after baby is born
 	title = ml_pregnancy.042.t
 	desc = ml_pregnancy.042.desc
 	theme = stewardship
-	override_background = { reference = garden }
+	override_background = { reference = temple_church }
 	
 	
 	
@@ -1154,7 +1195,7 @@ ml_pregnancy.043 = {# Breaking the Vow and bad stuff happens
 	title = ml_pregnancy.043.t
 	desc = ml_pregnancy.043.desc
 	theme = stewardship
-	override_background = { reference = garden }
+	override_background = { reference = temple_church }
 	
 	
 	
